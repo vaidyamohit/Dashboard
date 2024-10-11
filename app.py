@@ -8,7 +8,7 @@ from plotly.subplots import make_subplots
 # Load dataset
 #df = pd.read_csv('/content/mutual_funds_data.csv')
 # Load dataset from GitHub
-df = pd.read_csv('https://github.com/username/repository/raw/branch/mutual_funds_data.csv')
+df = pd.read_csv('https://github.com/vaidyamohit/Dashboard/blob/main/mutual_funds_data.csv')
 df[['beta', 'sd']] = df[['beta', 'sd']].apply(pd.to_numeric, errors='coerce').dropna(subset=['beta', 'sd'])
 
 # Create fund size group column
